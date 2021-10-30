@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+            background-size: cover;
+           
+            font-family: sans-serif;
+            margin-top: 40px;
+        }
+        #regform{
+            width: 800px;
+            margin: auto;
+          background-color: blue;   
+          color: bisque;
+          padding: 10px 0px 10px 0px;
+          text-align: center;
+          border-radius:15px 15px 0px 0px ;
+        }
+        #main{
+            background-color: rgba(32, 39, 39, 0.6);
+            width: 800px;
+            margin: auto;
+            padding-bottom: 20px;
+        }
+        form{
+            padding: 10px;
+        }
+        .name{
+            margin-left: 25px;
+            margin-top: 30px;
+            width: 125px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 10px;
+        }
+        #flabel{
+            color: white;
+        }
+        #slabel{
+            color: white;
+        }
+        #lname{
+             margin-left: 50px;
+        }
+        #student{
+            padding: 20px;
+            color: white;
+        }
+        #areacode,#phone_number,.check{
+            color: white;
+        }
+        .check{
+            padding: 20px;
+        }
+        button{
+            color: rgb(63, 58, 58);
+            background-color: coral;
+            padding: 5px 20px 5px 20x;
+            font-size: larger;
+            box-shadow: 0 0 10px black;
+        }
+        .radio{
+            padding: 20px;
+        }
+        #company{
+            width: 80%;
+        }
+        #email{
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div id="regform">
+        <h1>Registration Form</h1>
+    </div>
+    <div id="main">
+        <form>
+            <div id="name">
+                <h2 class="name">Name</h2>
+                <input id="fname" type="text" name="first_name" required minlength="3" pattern="[a-Z]">
+                <label id="flabel">first name</label>
+                <input id="lname" type="text" name="last_name" required minlength="1" pattern="[a-Z]">
+                <label id="slabel">last name</label>
+
+                <h2 class="name">Company</h2>
+                <input id="company" type="text" name="company" required>
+
+                <h2 class="name">Email</h2>
+                <input id="email" type="text" name="email" required minlength="4" pattern="[a-Z+.+@gmail\.com]">
+
+                <h2 class="name">Phone</h2>
+                <input id="phone" type="text" name="areacode" placeholder="+91">
+                <label id="areacode">Area code</label>
+                <input id="number" type="text" name="phone">
+                <label id="phone_number">Phone number</label>
+
+                <h2 class="name">Subject</h2>
+                <select id="option" name="subject">
+                    <option disabled="disabled" selected="selected">--Choose Option</option>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>Javascript</option>
+                    <option>JAVA</option>
+                    <option>DSA</option>
+                </select>
+                <h2 id="student">Are you  beginner ?</h2>
+                <label class="radio">
+                    <input id="r1" type="radio" checked="checked" name="gender" >
+                    <span class="check">Yes</span>
+                </label>
+                <label class="radio">
+                    <input id="r2" type="radio" checked="checked" name="gender">
+                    <span class="check">No</span>
+                </label>
+                <button type="submit">Register</button>
+
+
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
